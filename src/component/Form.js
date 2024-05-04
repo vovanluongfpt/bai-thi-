@@ -14,9 +14,10 @@ function Dangky(){
         const clearForm = ()=>{
             setID(0);
             setName('');
+            setAtho('');
             setNamxuatban('');
         }
-        const save = (id,name, namxuatban)=>{
+        const save = (id,name, atho, namxuatban)=>{
             if(id==0){
                 dkts.dangkythemsach.add({ name:name, atho:atho , namxuatban:namxuatban})
             }
