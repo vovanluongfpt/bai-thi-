@@ -46,7 +46,7 @@ function Dangky(){
     <tr><td><input type="text" onChange={(e)=>setName(e.target.value)}value={name} ></input></td></tr>
     <tr><td><input type="text" onChange={(e)=>setAtho(e.target.value)}value={atho} ></input></td></tr>
     <tr><td><input type="date" onChange={(e)=>setNamxuatban(e.target.value)}value={namxuatban}></input></td></tr>
-    <button onClick={()=>save(id , name , namxuatban)}>Add</button>
+    <button onClick={()=>save(id , name , atho, namxuatban)}>Add</button>
     <div>
     {dangkythemsach.map(items=>(
     <div key={items.id} >
